@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<div className="w-full my-6">
 			<p className="text-center">
-				Site developed by{" "}
+				Site developed with <i className="i-fa6-solid-heart text-red-600"></i> by{" "}
 				<Link href="" target="_blank" className="hover:underline text-[#ff79c6]">
 					DefinedEntity
 				</Link>

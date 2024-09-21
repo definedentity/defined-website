@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 import avatar from "@/assets/avatar.png";
-import { FaDiscord, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Header() {
@@ -20,10 +19,10 @@ export default function Header() {
 				/>
 				<div className="flex gap-12 mt-3 justify-center items-center">
 					<Link href={"https://github.com/definedentity"} target="_blank" className="hover:scale-125 duration-300">
-						<FaGithub className="w-8 h-8" />
+						<i className="i-fa6-brands-github w-10 h-10"></i>
 					</Link>
 					<Link href={"https://discord.com/users/1122487934680060016"} target="_blank" className="hover:scale-125 duration-300">
-						<FaDiscord className="w-8 h-8" />
+						<i className="i-fa6-brands-discord w-10 h-10"></i>
 					</Link>
 				</div>
 			</div>

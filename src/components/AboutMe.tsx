@@ -1,18 +1,9 @@
 export default function AboutMe() {
 	return (
-		<div className="w-11/12 mx-auto">
-			<div className="border border-white rounded-xl">
-				<div className="p-6">
-					<p className="text-3xl">About Me</p>
-					<div className="mt-3">
-						<p>
-							Hello, I{"'"}m Minh Tho Nguyen aka DefinedEntity. My
-							pronouns are he/him/his. I{"'"}m a self taught web
-							developer and Minecraft mod developer. I also like
-							playing games and watching anime.
-						</p>
-					</div>
-				</div>
+		<div className="w-11/12 border border-white mx-auto rounded-xl p-3">
+			<div className="">
+				<p className="text-3xl font-semibold">About Me</p>
+				<p>I{"'"}m Defined Entity (or just Defined for short). I{"'"}m a self taught web developer and Minecraft mod developer.</p>
 			</div>
 		</div>
 	);
