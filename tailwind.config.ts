@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import {iconsPlugin, getIconCollections} from "@egoist/tailwindcss-icons"
 
 const config: Config = {
   content: [
@@ -8,13 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+    },
   },
-  plugins: [
-    iconsPlugin({
-      collections: getIconCollections(["fa6-brands", "fa6-solid"]),
-    })
-  ],
+  plugins: [],
 };
-
 export default config;
