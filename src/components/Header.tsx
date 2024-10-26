@@ -9,10 +9,10 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-
-import avatar from "@/assets/img/avatar.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
+import avatar from "@/assets/img/avatar.png";
 
 const cardContents: Array<{ icon: React.ReactNode; text: string }> = [
 	{
@@ -46,10 +46,13 @@ export default function Header() {
 		<div className="w-full h-screen grid place-items-center">
 			<Card className="border border-white bg-black w-11/12 sm:w-4/5 md:w-8/12 lg:w-1/2 xl:w-2/5">
 				<CardHeader>
-					<CardTitle className="text-white text-center text-4xl">
-						Hi, {"I'm"} DefinedEntity
+					<CardTitle className="text-white">
+						<p className="text-4xl text-center">Hi, {"I'm"} DefinedEntity</p>
+						<p className="text-xl text-primary text-center">
+							{"<Web developer & Minecraft mod developer>"}
+						</p>
 					</CardTitle>
-					<CardDescription className="mx-auto pt-6">
+					<CardDescription className="mx-auto">
 						<Avatar className="w-36 h-36">
 							<AvatarImage src={avatar.src} className="object-cover" />
 							<AvatarFallback>DE</AvatarFallback>
@@ -65,21 +68,21 @@ export default function Header() {
 					))}
 				</CardContent>
 				<CardFooter className="flex gap-2 justify-center items-center flex-wrap">
-					<Link href="https://github.com/definedentity" target="_blank">
-						<Button variant="outline">
+					<Button variant="outline" asChild>
+						<Link href="https://github.com/definedentity" target="_blank">
 							<i className="i-fa6-brands-github"></i>GitHub
-						</Button>
-					</Link>
-					<Link href="https://www.youtube.com/@DrDefined">
-						<Button variant="outline">
-							<i className="i-fa6-brands-youtube"></i>YouTube
-						</Button>
-					</Link>
-					<Link href="mailto:hello@definedentity.dev" target="_blank">
-						<Button variant="outline">
+						</Link>
+					</Button>
+					<Button variant="outline" asChild>
+						<Link href="https://www.youtube.com/@DrDefined">
+							<i className="i-fa6-brands-youtube text-red-600"></i>YouTube
+						</Link>
+					</Button>
+					<Button variant="outline" asChild>
+						<Link href="mailto:hello@definedentity.dev" target="_blank">
 							<i className="i-fa6-solid-envelope"></i>Email
-						</Button>
-					</Link>
+						</Link>
+					</Button>
 				</CardFooter>
 			</Card>
 		</div>
