@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
-import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons";
-import tailwindAnimate from "tailwindcss-animate";
+import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons"
+import type { Config } from "tailwindcss"
+import tailwindAnimate from "tailwindcss-animate"
 
 const config: Config = {
 	darkMode: ["class"],
@@ -66,5 +66,5 @@ const config: Config = {
 			collections: getIconCollections(["fa6-solid", "fa6-brands"]),
 		}),
 	],
-};
-export default config;
+}
+export default config
