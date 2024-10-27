@@ -1,14 +1,14 @@
-import AboutMe from "@/components/AboutMe"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
-import MyProjectsContainer from "@/components/MyProjectsContainer"
+import { AboutMe } from "@/components/about-me"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
+import { ProjectContainer } from "@/components/project-container"
 
 export default function Home() {
 	return (
 		<div className='w-full h-full bg-black'>
 			<Header />
 			<AboutMe />
-			<MyProjectsContainer />
+			<ProjectContainer />
 			<Footer />
 		</div>
 	)

@@ -41,7 +41,7 @@ const cardContents: Array<{ icon: React.ReactNode; text: string }> = [
 	},
 ]
 
-export default function Header() {
+export function Header() {
 	return (
 		<header className='w-full h-screen grid place-items-center'>
 			<Card className='border border-white bg-black w-11/12 sm:w-4/5 md:w-8/12 lg:w-1/2 xl:w-2/5'>
