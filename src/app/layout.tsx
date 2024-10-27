@@ -20,9 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${oxanium.className} antialiased`}>
-				{children}
-			</body>
+			<body className={`${oxanium.className} antialiased`}>{children}</body>
 		</html>
 	)
 }

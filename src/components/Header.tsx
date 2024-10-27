@@ -47,28 +47,21 @@ export function Header() {
 			<Card className='border border-white bg-black w-11/12 sm:w-4/5 md:w-8/12 lg:w-1/2 xl:w-2/5'>
 				<CardHeader>
 					<CardTitle className='text-white'>
-						<p className='text-4xl text-center'>
-							Hi, {"I'm"} DefinedEntity
-						</p>
+						<p className='text-4xl text-center'>Hi, {"I'm"} DefinedEntity</p>
 						<p className='text-xl text-primary text-center'>
 							{"<Web developer & Minecraft mod developer>"}
 						</p>
 					</CardTitle>
 					<CardDescription className='mx-auto'>
 						<Avatar className='w-36 h-36'>
-							<AvatarImage
-								src={avatar.src}
-								className='object-cover'
-							/>
+							<AvatarImage src={avatar.src} className='object-cover' />
 							<AvatarFallback>DE</AvatarFallback>
 						</Avatar>
 					</CardDescription>
 				</CardHeader>
 				<CardContent className='flex gap-2 justify-center items-center flex-wrap'>
 					{cardContents.map(({ icon, text }, index) => (
-						<Badge
-							key={index}
-							className='flex gap-1 cursor-pointer'>
+						<Badge key={index} className='flex gap-1 cursor-pointer'>
 							{icon}
 							{text}
 						</Badge>
@@ -76,9 +69,7 @@ export function Header() {
 				</CardContent>
 				<CardFooter className='flex gap-2 justify-center items-center flex-wrap'>
 					<Button variant='outline' asChild>
-						<Link
-							href='https://github.com/definedentity'
-							target='_blank'>
+						<Link href='https://github.com/definedentity' target='_blank'>
 							<i className='i-fa6-brands-github'></i>GitHub
 						</Link>
 					</Button>
@@ -89,9 +80,7 @@ export function Header() {
 						</Link>
 					</Button>
 					<Button variant='outline' asChild>
-						<Link
-							href='mailto:hello@definedentity.dev'
-							target='_blank'>
+						<Link href='mailto:hello@definedentity.dev' target='_blank'>
 							<i className='i-fa6-solid-envelope'></i>Email
 						</Link>
 					</Button>

@@ -3,7 +3,7 @@
 		"prettier-plugin-tailwindcss",
 		"prettier-plugin-organize-imports"
 	],
-	"tabWidth": 4,
+	"tabWidth": 2,
 	"useTabs": true,
 	"endOfLine": "lf",
 	"trailingComma": "all",
