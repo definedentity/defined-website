@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Oxanium } from "next/font/google"
 import "./globals.css"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const oxanium = Oxanium({
 	subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${oxanium.className} antialiased`}>{children}</body>
+			<SpeedInsights/>
 		</html>
 	)
 }
