@@ -48,7 +48,7 @@ export function Header() {
 				<CardHeader>
 					<CardTitle className='text-white'>
 						<p className='text-4xl text-center'>Hi, {"I'm"} DefinedEntity</p>
-						<p className='text-xl text-primary text-center'>
+						<p className='text-xl text-violet-500 text-center'>
 							{"<Web developer & Minecraft mod developer>"}
 						</p>
 					</CardTitle>
