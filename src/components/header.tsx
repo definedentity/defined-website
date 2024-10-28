@@ -54,7 +54,7 @@ export function Header() {
 					</CardTitle>
 					<CardDescription className='mx-auto'>
 						<Avatar className='w-36 h-36'>
-							<AvatarImage src={avatar.src} className='object-cover' />
+							<AvatarImage src={avatar.src} alt="avatar" className='object-cover' />
 							<AvatarFallback>DE</AvatarFallback>
 						</Avatar>
 					</CardDescription>
