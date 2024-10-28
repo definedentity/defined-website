@@ -9,7 +9,7 @@ export function Footer() {
 				<Link
 					href='https://github.com/definedentity'
 					target='_blank'
-					className='text-primary'>
+					className='text-violet-500'>
 					DefinedEntity
 				</Link>
 			</p>
