@@ -28,7 +28,7 @@ export function ProjectItem({
 			<CardHeader>
 				<CardTitle className='text-primary-foreground'>
 					<Avatar className='w-12 h-12'>
-						<AvatarImage src={image} />
+						<AvatarImage src={image} alt={name} />
 						<AvatarFallback>{name}</AvatarFallback>
 					</Avatar>
 					{name}
