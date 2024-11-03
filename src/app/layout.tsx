@@ -1,28 +1,25 @@
-import type { Metadata } from "next"
-import { Oxanium } from "next/font/google"
-import "./globals.css"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import "~/styles/globals.css";
 
-const oxanium = Oxanium({
-	subsets: ["latin"],
-	display: "swap",
-})
+import { Oxanium } from "next/font/google";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "DefinedEntity",
-	description:
-		"Defined Entity is a self taught web developer and Minecraft mod developer",
-}
+  title: "Defined's HQ",
+  description: "Defined Entity's website",
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
+};
+
+const oxanium = Oxanium({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode
-}>) {
-	return (
-		<html lang='en'>
-			<body className={`${oxanium.className} antialiased`}>{children}</body>
-			<SpeedInsights/>
-		</html>
-	)
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" className={`${oxanium.className}`}>
+      <body>{children}</body>
+    </html>
+  );
 }

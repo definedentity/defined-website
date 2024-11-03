@@ -1,42 +1,52 @@
 {
-  "name": "website",
+  "name": "defined-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "check": "next lint && tsc --noEmit",
+    "dev": "next dev --turbo",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "lint:fix": "next lint --fix",
+    "preview": "next build && next start",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.1",
-    "@radix-ui/react-slot": "^1.1.0",
-    "@vercel/speed-insights": "^1.0.14",
-    "appwrite": "14.0.1",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "appwrite": "^16.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.453.0",
-    "next": "^15.0.2",
-    "react": "^19.0.0-rc-0bc30748-20241028",
-    "react-dom": "^19.0.0-rc-0bc30748-20241028",
+    "next": "^15.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.3"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@iconify-json/fa6-brands": "^1.2.1",
     "@iconify-json/fa6-solid": "^1.2.1",
-    "@types/node": "^20.17.3",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.0.2",
-    "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8.4.47",
-    "prettier-plugin-organize-imports": "^4.1.0",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwindcss": "^3.4.14",
-    "typescript": "^5.6.3"
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.1",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.5.3"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.38.0"
   }
 }

@@ -1,17 +1,16 @@
-export const dynamic = 'force-dynamic'
-
-import { AboutMe } from "@/components/about-me"
-import { Footer } from "@/components/footer"
-import { Header } from "@/components/header"
-import { ProjectContainer } from "@/components/project"
+import React from "react";
+import { AboutMe } from "~/components/AboutMe";
+import { Footer } from "~/components/Footer";
+import { Header } from "~/components/Header";
+import { ProjectContainer } from "~/components/ProjectContainer";
 
 export default function Home() {
-	return (
-		<div className='w-full h-full bg-black'>
-			<Header />
-			<AboutMe />
-			<ProjectContainer />
-			<Footer />
-		</div>
-	)
+  return (
+    <>
+      <Header />
+      <AboutMe />
+      <ProjectContainer />
+      <Footer />
+    </>
+  );
 }
