@@ -78,7 +78,7 @@ export function Header() {
             </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href="https://www.youtube.com/@DrDefined">
+            <Link href="https://www.youtube.com/@DrDefined" target="_blank">
               <i className="i-fa6-brands-youtube text-red-600"></i>
               YouTube
             </Link>
