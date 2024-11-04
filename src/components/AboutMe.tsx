@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/Card";
 
 export function AboutMe() {
   return (
-    <div className="h-full w-full">
+    <section className="h-full w-full">
       <p className="py-6 text-center text-3xl text-white">About Me</p>
       <div>
         <Card className="mx-auto h-full w-11/12 border border-white bg-black text-white">
@@ -17,6 +17,6 @@ export function AboutMe() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }

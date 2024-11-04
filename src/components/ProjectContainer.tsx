@@ -11,7 +11,7 @@ export async function ProjectContainer() {
     .documents as ProjectType[];
 
   return (
-    <div className="h-full w-full">
+    <section className="h-full w-full">
       <p className="py-6 text-center text-3xl text-white">My Projects</p>
       <div className="mx-auto grid h-full w-11/12 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {data.map((project: ProjectType) => (
@@ -24,6 +24,6 @@ export async function ProjectContainer() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
